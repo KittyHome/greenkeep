@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+site.html
+bundle.js
+bundle.css
+sitemap.xml
+robots.txt
+assets-list.txt
