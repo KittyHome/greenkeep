@@ -57,30 +57,40 @@
         <div class="shell">
           <p class="kicker">Trailer</p>
           <h2>Two and a half minutes of Greenkeep</h2>
-          <div class="trailer" style="margin-top: 1.5rem">
-            <div class="trailer__stage">
-              <video poster="media/video/intro-poster.webp" muted loop playsinline autoplay>
-                <source src="media/video/intro-teaser.mp4" type="video/mp4" />
+          <div class="player" style="margin-top: 1.5rem">
+            <div class="player__stage">
+              <video
+                id="intro-hd-media"
+                data-autoplay-video
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+                preload="auto"
+                poster="media/video/intro-poster.webp"
+                aria-label="Greenkeep official intro trailer"
+              >
+                <source src="media/video/intro-hd.mp4" type="video/mp4" />
               </video>
-              <button class="trailer__play" type="button" data-trailer-yt="_sWoGF-cBxM">
-                <span>▶ Watch trailer · 2:30</span>
-              </button>
             </div>
-            <div>
-              <p class="lede">
-                Hold a lane. Grow a garden they cannot demolish. Raid someone else’s harvest while
-                they sleep.
-              </p>
-              <ul class="pills" style="margin-top: 1.2rem">
-                <li>YouTube · youtu.be/_sWoGF-cBxM</li>
-                <li>Teaser MP4 in /media/video</li>
-                <li>Poster JPG · WebP</li>
-              </ul>
-              <div class="btn-row" style="margin-top: 1.2rem">
-                <a class="btn btn--sun" href="https://youtu.be/_sWoGF-cBxM" target="_blank" rel="noopener"
-                  >Watch on YouTube</a
+            <div class="player__bar">
+              <div class="player__meta">
+                <span><strong>HD intro</strong> · 2:30</span>
+                <span>Embedded MP4 · autoplays muted</span>
+              </div>
+              <div class="player__actions">
+                <button class="btn btn--ghost sound-btn" type="button" data-sound-toggle="#intro-hd-media">
+                  Sound off
+                </button>
+                <a class="btn btn--sun" href="media/video/intro-hd.mp4" download>Download HD</a>
+                <a
+                  class="btn btn--ghost"
+                  href="https://youtu.be/_sWoGF-cBxM"
+                  target="_blank"
+                  rel="noopener"
+                  >YouTube</a
                 >
-                <a class="btn btn--ghost" href="media/video/intro-teaser.mp4" download>Download teaser</a>
               </div>
             </div>
           </div>

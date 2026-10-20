@@ -15,7 +15,7 @@
   ·
   <a href="https://www.greenkeep.org/">greenkeep.org</a>
   ·
-  <a href="https://youtu.be/_sWoGF-cBxM">Trailer</a>
+  <a href="https://kittyhome.github.io/greenkeep/#trailer">HD trailer</a>
   ·
   <a href="media.html">Media kit</a>
   ·
@@ -23,7 +23,15 @@
 </p>
 
 <p align="center">
-  <img src="media/brand/og-card.jpg" width="720" alt="Greenkeep — plants defending a garden from insects" />
+  <a href="media/video/intro-hd.mp4">
+    <img src="media/video/intro-poster.jpg" width="720" alt="Play the Greenkeep HD intro trailer" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="media/video/intro-hd.mp4"><strong>▶ Watch / download HD intro (2:30)</strong></a>
+  ·
+  <a href="https://youtu.be/_sWoGF-cBxM">YouTube</a>
 </p>
 
 ---
@@ -42,17 +50,8 @@ Scout a rival base, stack lanes, and break it while its keeper sleeps. Defenders
 | **Platforms** | Web browser · Android APK |
 | **Price** | Free to play |
 | **Roster** | 48 plants · 28 insects |
+| **Trailer** | [`media/video/intro-hd.mp4`](media/video/intro-hd.mp4) |
 | **Contact** | [hello@greenkeep.org](mailto:hello@greenkeep.org) |
-
----
-
-## Trailer
-
-[![Watch the Greenkeep trailer](media/video/intro-poster.jpg)](https://youtu.be/_sWoGF-cBxM)
-
-**2:30** · in-game footage · [youtu.be/_sWoGF-cBxM](https://youtu.be/_sWoGF-cBxM)
-
-Local teaser clip: [`media/video/intro-teaser.mp4`](media/video/intro-teaser.mp4)
 
 ---
 
@@ -68,7 +67,7 @@ Local teaser clip: [`media/video/intro-teaser.mp4`](media/video/intro-teaser.mp4
 | ![Raid](media/screens/shot-raid-moonlit.webp) | ![Plants](media/screens/shot-plants.webp) | ![Insects](media/screens/shot-insects.webp) |
 | Moonlit Lawn raid | Plant roster | Hatchery |
 
-More shots (missions, team, Guardian, loading) live in [`media/screens/`](media/screens/).
+More shots live in [`media/screens/`](media/screens/).
 
 ---
 
@@ -87,26 +86,24 @@ More shots (missions, team, Guardian, loading) live in [`media/screens/`](media/
 3. **Async raids** — scout, deploy insects lane by lane, watch the three-minute fight resolve  
 4. **Teams & Gold Cup** — 24-hour wars and seasonal Swiss pairings when you are ready
 
-Deep dives on the live site: [Modes](https://www.greenkeep.org/modes) · [Battle guide](https://www.greenkeep.org/battle) · [Garden Codex](https://www.greenkeep.org/codex)
+Deep dives: [Modes](https://www.greenkeep.org/modes) · [Battle guide](https://www.greenkeep.org/battle) · [Garden Codex](https://www.greenkeep.org/codex)
 
 ---
 
 ## This repository
 
-Public marketing profile and media kit for Greenkeep.
+Public marketing site + media kit. The landing page embeds the **HD intro** and autoplays it (muted, browser policy) on GitHub Pages.
 
 | Path | Contents |
 | --- | --- |
-| [`index.html`](index.html) | Marketing landing page (GitHub Pages ready) |
+| [`index.html`](index.html) | Cinematic marketing landing page |
 | [`media.html`](media.html) | Trailer + filterable gallery |
-| [`media/brand/`](media/brand/) | Logo, favicons, OG card, title art |
+| [`media/video/intro-hd.mp4`](media/video/intro-hd.mp4) | Official HD intro trailer |
 | [`media/screens/`](media/screens/) | In-game screenshots |
 | [`media/maps/`](media/maps/) | Board / lawn art |
-| [`media/art/`](media/art/) | Key art & loading art |
-| [`media/video/`](media/video/) | Trailer teaser + posters |
+| [`media/brand/`](media/brand/) | Logo, favicons, OG card |
 
-**Play the game:** [www.greenkeep.org](https://www.greenkeep.org/)  
-**Press / creators:** credit Greenkeep / KittyHome · extra assets via [hello@greenkeep.org](mailto:hello@greenkeep.org)
+**Play:** [www.greenkeep.org](https://www.greenkeep.org/) · **Press:** credit Greenkeep / KittyHome · [hello@greenkeep.org](mailto:hello@greenkeep.org)
 
 ---
 

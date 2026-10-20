@@ -19,6 +19,7 @@
       content="Grow a garden they cannot demolish. Raid someone else’s harvest. Play free in the browser or on Android."
     />
     <meta property="og:image" content="media/brand/og-card.jpg" />
+    <meta property="og:video" content="media/video/intro-hd.mp4" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Greenkeep — lane defence with a garden you keep" />
     <meta
@@ -48,6 +49,14 @@
         "gamePlatform": ["WebBrowser", "Android"],
         "applicationCategory": "GameApplication",
         "operatingSystem": "Android, Web",
+        "trailer": {
+          "@type": "VideoObject",
+          "name": "Greenkeep — official intro trailer",
+          "thumbnailUrl": "media/video/intro-poster.jpg",
+          "contentUrl": "media/video/intro-hd.mp4",
+          "uploadDate": "2026-10-10",
+          "duration": "PT2M30S"
+        },
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -81,34 +90,89 @@
       <section class="hero">
         <div class="hero__media" aria-hidden="true">
           <video
-            data-hero-video
+            data-autoplay-video
             autoplay
             muted
             loop
             playsinline
+            preload="auto"
             poster="media/video/intro-poster.jpg"
           >
-            <source src="media/video/intro-teaser.mp4" type="video/mp4" />
+            <source src="media/video/intro-hd.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="hero__veil" aria-hidden="true"></div>
         <div class="shell hero__content">
+          <p class="hero__live">Intro trailer playing</p>
           <h1 class="hero__brand">Greenkeep</h1>
           <p class="hero__line">Grow the garden. Command the swarm.</p>
           <p class="hero__sub">
             Lane defence with a garden you keep — lost raids steal your harvest, never the lawn you
             built.
           </p>
-          <ul class="pills">
-            <li>Free to play</li>
-            <li>Browser · Android</li>
-            <li>48 plants · 28 insects</li>
-          </ul>
           <div class="btn-row">
             <a class="btn" href="https://www.greenkeep.org/play">Play in browser</a>
-            <button class="btn btn--sun" type="button" data-trailer-yt="_sWoGF-cBxM">
-              Watch trailer
-            </button>
+            <a class="btn btn--sun" href="#trailer" data-scroll-trailer>Watch trailer</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--trailer" id="trailer">
+        <div class="shell">
+          <p class="kicker reveal">Official trailer</p>
+          <h2 class="reveal">Two and a half minutes of Greenkeep</h2>
+          <p class="lede reveal">
+            Hold a lane. Grow a garden they cannot demolish. Raid someone else’s harvest while they
+            sleep. Autoplays muted — turn sound on when you are ready.
+          </p>
+
+          <div class="player reveal">
+            <div class="player__stage">
+              <video
+                id="intro-hd"
+                data-autoplay-video
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+                preload="auto"
+                poster="media/video/intro-poster.webp"
+                aria-label="Greenkeep official intro trailer"
+              >
+                <source src="media/video/intro-hd.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="player__bar">
+              <div class="player__meta">
+                <span><strong>HD intro</strong> · 2:30</span>
+                <span>In-game footage · current build</span>
+              </div>
+              <div class="player__actions">
+                <button class="btn btn--ghost sound-btn" type="button" data-sound-toggle="#intro-hd">
+                  Sound off
+                </button>
+                <a class="btn btn--sun" href="media/video/intro-hd.mp4" download>Download HD</a>
+                <a
+                  class="btn btn--ghost"
+                  href="https://youtu.be/_sWoGF-cBxM"
+                  target="_blank"
+                  rel="noopener"
+                  >YouTube</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="trailer-copy reveal">
+            <p class="lede">
+              Free to play in the browser or on Android. Forty-eight plants hold the lanes. Twenty-eight
+              insects break them. Your garden stays — forever.
+            </p>
+            <div class="btn-row">
+              <a class="btn" href="https://www.greenkeep.org/play">Play free now</a>
+              <a class="btn btn--ghost" href="media.html">Browse media kit</a>
+            </div>
           </div>
         </div>
       </section>
@@ -118,8 +182,8 @@
           <p class="kicker reveal">The pitch</p>
           <h2 class="reveal">One fight. Then the garden.</h2>
           <p class="lede reveal">
-            Hold a lane. Grow a garden they cannot demolish. Raid someone else’s harvest while they
-            sleep.
+            You play both sides. Plants defend offline. Insects are how you take someone else’s
+            harvest.
           </p>
 
           <div class="split">
@@ -161,9 +225,9 @@
             Hub, missions, garden, roster, and fights on every lawn — from the current build.
           </p>
 
-          <div class="rail" aria-label="Screenshot gallery">
+          <div class="mosaic" aria-label="Screenshot gallery">
             <button
-              class="shot"
+              class="shot reveal"
               type="button"
               data-lightbox-src="media/screens/shot-hub.webp"
               data-lightbox-alt="Greenkeep hub village"
@@ -171,23 +235,11 @@
             >
               <figure>
                 <img src="media/screens/shot-hub.webp" alt="The hub village screen" loading="lazy" />
-                <figcaption>Hub</figcaption>
+                <figcaption>The hub — every mode a tap away</figcaption>
               </figure>
             </button>
             <button
-              class="shot"
-              type="button"
-              data-lightbox-src="media/screens/shot-garden.webp"
-              data-lightbox-alt="Player garden"
-              data-lightbox-caption="Your garden — plant, water, harvest; it is never demolished"
-            >
-              <figure>
-                <img src="media/screens/shot-garden.webp" alt="Garden screen" loading="lazy" />
-                <figcaption>Garden</figcaption>
-              </figure>
-            </button>
-            <button
-              class="shot"
+              class="shot reveal"
               type="button"
               data-lightbox-src="media/screens/shot-battle-sunlit.webp"
               data-lightbox-alt="Sunlit Lawn battle"
@@ -199,11 +251,11 @@
                   alt="Battle on Sunlit Lawn"
                   loading="lazy"
                 />
-                <figcaption>Battle</figcaption>
+                <figcaption>Sunlit Lawn defence</figcaption>
               </figure>
             </button>
             <button
-              class="shot"
+              class="shot reveal"
               type="button"
               data-lightbox-src="media/screens/shot-raid-moonlit.webp"
               data-lightbox-alt="Moonlit Lawn raid"
@@ -215,11 +267,23 @@
                   alt="Raid on Moonlit Lawn"
                   loading="lazy"
                 />
-                <figcaption>Raid</figcaption>
+                <figcaption>Moonlit Lawn raid</figcaption>
               </figure>
             </button>
             <button
-              class="shot"
+              class="shot reveal"
+              type="button"
+              data-lightbox-src="media/screens/shot-garden.webp"
+              data-lightbox-alt="Player garden"
+              data-lightbox-caption="Your garden — plant, water, harvest; it is never demolished"
+            >
+              <figure>
+                <img src="media/screens/shot-garden.webp" alt="Garden screen" loading="lazy" />
+                <figcaption>Your garden — never demolished</figcaption>
+              </figure>
+            </button>
+            <button
+              class="shot reveal"
               type="button"
               data-lightbox-src="media/screens/shot-plants.webp"
               data-lightbox-alt="Plant roster"
@@ -227,64 +291,13 @@
             >
               <figure>
                 <img src="media/screens/shot-plants.webp" alt="Plant roster" loading="lazy" />
-                <figcaption>Plants</figcaption>
-              </figure>
-            </button>
-            <button
-              class="shot"
-              type="button"
-              data-lightbox-src="media/screens/shot-insects.webp"
-              data-lightbox-alt="Insect hatchery"
-              data-lightbox-caption="The hatchery — every insect, its role and what it still needs"
-            >
-              <figure>
-                <img src="media/screens/shot-insects.webp" alt="Insect hatchery" loading="lazy" />
-                <figcaption>Insects</figcaption>
+                <figcaption>Plant roster</figcaption>
               </figure>
             </button>
           </div>
 
-          <div class="btn-row" style="margin-top: 0.5rem">
+          <div class="btn-row" style="margin-top: 1.25rem">
             <a class="btn btn--ghost" href="media.html">Full media kit</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="trailer">
-        <div class="shell">
-          <p class="kicker reveal">Trailer</p>
-          <h2 class="reveal">Two and a half minutes of Greenkeep</h2>
-          <div class="trailer reveal">
-            <div class="trailer__stage">
-              <video
-                poster="media/video/intro-poster.webp"
-                muted
-                loop
-                playsinline
-                autoplay
-                aria-label="Greenkeep trailer teaser"
-              >
-                <source src="media/video/intro-teaser.mp4" type="video/mp4" />
-              </video>
-              <button class="trailer__play" type="button" data-trailer-yt="_sWoGF-cBxM">
-                <span>▶ Watch trailer · 2:30</span>
-              </button>
-            </div>
-            <div>
-              <p class="lede">
-                Hold a lane. Grow a garden they cannot demolish. Raid someone else’s harvest while
-                they sleep.
-              </p>
-              <p class="lede" style="margin-top: 1rem">
-                2:30 · in-game footage from the current build · watch in HD on YouTube.
-              </p>
-              <div class="btn-row" style="margin-top: 1.4rem">
-                <a class="btn btn--sun" href="https://youtu.be/_sWoGF-cBxM" target="_blank" rel="noopener"
-                  >Open on YouTube</a
-                >
-                <a class="btn btn--ghost" href="https://www.greenkeep.org/media">Site gallery</a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -385,7 +398,9 @@
             ·
             <a href="mailto:hello@greenkeep.org">hello@greenkeep.org</a>
           </p>
-          <p style="margin: 0.35rem 0 0">Official site: <a href="https://www.greenkeep.org/">greenkeep.org</a></p>
+          <p style="margin: 0.35rem 0 0">
+            Official site: <a href="https://www.greenkeep.org/">greenkeep.org</a>
+          </p>
         </div>
         <nav aria-label="Footer">
           <a href="media.html">Media kit</a>
