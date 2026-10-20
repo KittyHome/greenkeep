@@ -17,10 +17,10 @@ Assets mirrored from [greenkeep.org](https://www.greenkeep.org/) for this public
 
 | File | Use |
 | --- | --- |
-| `media/video/intro-teaser.mp4` | Looping teaser (~1.2 MB) |
+| `media/video/intro-hd.mp4` | Official HD intro (~88 MB) — embedded + autoplays muted on the site |
 | `media/video/intro-poster.webp` | Poster (webp) |
 | `media/video/intro-poster.jpg` | Poster (jpg) |
-| [YouTube trailer](https://youtu.be/_sWoGF-cBxM) | Full 2:30 intro |
+| [YouTube mirror](https://youtu.be/_sWoGF-cBxM) | Same trailer on YouTube |
 
 ## Screenshots
 
